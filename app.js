@@ -29,11 +29,11 @@ const allowedNames = [
 
 // Track GPX links
 const linkTracks = {
-    "Schwarze_Loipe": "Tracks_gpx/Black.gpx",
-    "Nachtloipe": "Tracks_gpx/Night.gpx",
-    "Grüne_Loipe": "Tracks_gpx/Green.gpx",
-    "Rote_Loipe": "Tracks_gpx/Rot.gpx",
-    "Gelbe_Loipe": "Tracks_gpx/Yellow.gpx"
+    "Schwarze_Loipe": "./Tracks_gpx/Black.gpx",
+    "Nachtloipe": "./Tracks_gpx/Night.gpx",
+    "Grüne_Loipe": "./Tracks_gpx/Green.gpx",
+    "Rote_Loipe": "./Tracks_gpx/Rot.gpx",
+    "Gelbe_Loipe": "./Tracks_gpx/Yellow.gpx"
 };
 
 // Track display names
@@ -90,7 +90,7 @@ function init() {
 
     // Load 3D model
     const loader = new THREE.GLTFLoader();
-    loader.load('3D_Model/3D_model.gltf', function (gltf) {
+    loader.load('./3D_Model/3D_model.gltf', function (gltf) {
         const model = gltf.scene;
         model.name = "3D-Model";
         model.position.set(0, 0, 0);
