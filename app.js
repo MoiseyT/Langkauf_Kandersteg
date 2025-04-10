@@ -92,8 +92,7 @@ function init() {
 
     // Load 3D model
     const loader = new THREE.GLTFLoader();
-    //loader.load('https://raw.githubusercontent.com/MoiseyT/Langkauf_Kandersteg/main/3D_Model/3D_Model.gltf', function (gltf) {
-    loader.load('./3D_Model/3D_Model.gltf', function (gltf) {
+    loader.load('https://raw.githubusercontent.com/MoiseyT/Langkauf_Kandersteg/main/3D_Model/3D_Model.gltf', function (gltf) {
         const model = gltf.scene;
         model.name = "3D-Model";
         model.position.set(0, 0, 0);
@@ -121,7 +120,7 @@ function init() {
         
 
         filterObjectsByName(model); 
-
+        
         loadingScreen.style.display = "none";
     }, undefined, function (error) {
         console.error("error", error);
