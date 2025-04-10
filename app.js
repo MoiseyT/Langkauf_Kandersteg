@@ -90,7 +90,7 @@ function init() {
 
     // Load 3D model
     const loader = new THREE.GLTFLoader();
-    loader.load('https://github.com/MoiseyT/Langkauf_Kandersteg/blob/main/3D_Model/3D_Model.bin', function (gltf) {
+    loader.load('https://bitbucket.org/Moisey123/skitrack/downloads/3D_Model.gltf', function (gltf) {
         const model = gltf.scene;
         model.name = "3D-Model";
         model.position.set(0, 0, 0);
