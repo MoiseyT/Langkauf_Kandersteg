@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.css" />
+</head>
+
+<body>
+
+    <!-- Popup container for displaying track info -->
+    <div id="popup" class="popup">
+
+        <!-- Track title --> 
+        <h2 id="popup-title"></h2>
+
+        <!-- Track difficulty -->
+        <p id="popup-subtitle"></p>
+
+        <!-- Close button for popup -->
+        <button id="popup-close" class="popup-close">X</button>
+    </div>
+
+    <!-- Dynamic list of track buttons -->
+    <div id="object-list" class="object-list"></div>
+
+
+
+    <!-- Three.js core library -->
+    <script src="https://unpkg.com/three@0.112/build/three.min.js"></script>
+
+    <!-- OrbitControls for camera movement -->
+    <script src="https://unpkg.com/three@0.112/examples/js/controls/OrbitControls.js"></script>
+
+    <!-- GLTFLoader for importing 3D models -->
+    <script src="https://unpkg.com/three@0.112/examples/js/loaders/GLTFLoader.js"></script>
+
+    <!-- Leaflet JS for interactive maps -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <!-- Leaflet Elevation plugin JS -->
+    <script src="https://unpkg.com/@raruto/leaflet-elevation/dist/leaflet-elevation.js"></script>
+
+    <!-- Script with popup display logic -->
+    <script src="popupSetting.js"></script>
+
+    <!-- Main app logic (Three.js + interaction) -->
+    <script src="app.js"></script>
+</body>
+
+</html>
